@@ -39,7 +39,7 @@ const dataForJapanGDP = {
   ],
 };
 const dataForIranGDP = {
-  labels: labelsForJapanGDP,
+  labels: labels,
   datasets: [
     {
       label: "Iran GDP (USD)",
