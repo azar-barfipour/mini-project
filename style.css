@@ -1,3 +1,4 @@
+/* reset */
 * {
   box-sizing: border-box;
 }
@@ -7,14 +8,45 @@ body {
   padding: 0;
 }
 
+/* header */
+.header-container {
+  background-color: rgb(32, 85, 111);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.header-logo {
+  width: 120px;
+}
+.header-title {
+  color: #fff;
+}
+
 /* graphs */
 .graphs {
   display: flex;
   flex-direction: column;
 }
-
 .graph {
   margin: 1rem;
   padding: 1rem;
   border: 3px solid salmon;
+}
+
+/*  footer  */
+.footer-container {
+  background-color: rgb(32, 85, 111);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  position: relative;
+  bottom: 0;
+}
+.footer-logo {
+  width: 50px;
+  margin-right: 1rem;
+}
+.footer-title {
+  color: #fff;
 }
