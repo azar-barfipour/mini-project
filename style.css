@@ -24,6 +24,11 @@ body {
   color: #fff;
 }
 
+/* section */
+.section-header{
+  text-align: center;
+}
+
 /* graphs */
 .graphs {
   display: flex;
@@ -50,4 +55,15 @@ body {
 }
 .footer-title {
   color: #fff;
+}
+
+@media (min-width: 40rem) {
+  .graphs {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .graph {
+    width: 45%;
+  }
 }
