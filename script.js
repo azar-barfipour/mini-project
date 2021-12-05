@@ -2,6 +2,7 @@
 const MAN = 10000;
 const OKU = 100000000;
 const TYO = 1000000000000;
+const BILLION = 1000000000;
 const japanNumToCanadaDoller = (oku_yen, unit) => {
   return oku_yen * unit;
 };
@@ -21,6 +22,35 @@ const dataForJapanGDP = {
         japanNumToCanadaDoller(3.133, TYO),
         japanNumToCanadaDoller(4.888, TYO),
         japanNumToCanadaDoller(5.7, TYO),
+      ],
+    },
+    {
+      label: "Canada GDP (USD)",
+      backgroundColor: "rgb(0, 99, 132)",
+      borderColor: "rgb(0, 99, 132)",
+      data: [
+        japanNumToCanadaDoller(992.7, OKU),
+        japanNumToCanadaDoller(2739, OKU),
+        japanNumToCanadaDoller(5939, OKU),
+        japanNumToCanadaDoller(7448, OKU),
+        japanNumToCanadaDoller(1.167, TYO),
+      ],
+    },
+  ],
+};
+const dataForIranGDP = {
+  labels: labelsForJapanGDP,
+  datasets: [
+    {
+      label: "Iran GDP (USD)",
+      backgroundColor: "rgb(255, 99, 132)",
+      borderColor: "rgb(255, 99, 132)",
+      data: [
+        japanNumToCanadaDoller(10.98, BILLION),
+        japanNumToCanadaDoller(94.36, BILLION),
+        japanNumToCanadaDoller(128.8, BILLION),
+        japanNumToCanadaDoller(109.6, BILLION),
+        japanNumToCanadaDoller(486.8, BILLION),
       ],
     },
     {
@@ -74,6 +104,16 @@ const japanCanadaGDPconfig = {
   data: dataForJapanGDP,
   options: {},
 };
+const configIran = {
+  type: "line",
+  data: dataForIranGDP,
+  options: {},
+};
+
+// create chart
+const IranChart = new Chart(
+  document.getElementById("Canada-Iran-gdp"),
+  configIran);
 
 const japanCanadaPopulationConfig = {
   type: "line",
