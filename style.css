@@ -1,12 +1,14 @@
+/* reset */
 * {
   box-sizing: border-box;
-  /* background-color: salmon; */
 }
 
 body {
   margin: 0;
   padding: 0;
 }
+
+/* header */
 .header-container {
   background-color: rgb(32, 85, 111);
   display: flex;
@@ -20,9 +22,19 @@ body {
 .header-title {
   color: #fff;
 }
-main {
-  height: 500px;
+
+/* graphs */
+.graphs {
+  display: flex;
+  flex-direction: column;
 }
+.graph {
+  margin: 1rem;
+  padding: 1rem;
+  border: 3px solid salmon;
+}
+
+/*  footer  */
 .footer-container {
   background-color: rgb(32, 85, 111);
   display: flex;
