@@ -20,3 +20,21 @@ body {
 .header-title {
   color: #fff;
 }
+main {
+  height: 500px;
+}
+.footer-container {
+  background-color: rgb(32, 85, 111);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  position: relative;
+  bottom: 0;
+}
+.footer-logo {
+  width: 50px;
+  margin-right: 1rem;
+}
+.footer-title {
+  color: #fff;
+}
