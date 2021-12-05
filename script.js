@@ -1,4 +1,5 @@
 // for Japan
+const MAN = 10000;
 const OKU = 100000000;
 const TYO = 1000000000000;
 const japanNumToCanadaDoller = (oku_yen, unit) => {
@@ -57,11 +58,11 @@ const dataForJapanPopulation = {
       backgroundColor: "rgb(0, 99, 132)",
       borderColor: "rgb(0, 99, 132)",
       data: [
-        japanNumToCanadaDoller(0, OKU),
-        japanNumToCanadaDoller(0, OKU),
-        japanNumToCanadaDoller(0, OKU),
-        japanNumToCanadaDoller(0, OKU),
-        japanNumToCanadaDoller(0, OKU),
+        japanNumToCanadaDoller(2132, MAN),
+        japanNumToCanadaDoller(2452, MAN),
+        japanNumToCanadaDoller(2769, MAN),
+        japanNumToCanadaDoller(3069, MAN),
+        japanNumToCanadaDoller(3400, MAN),
       ],
     },
   ],
