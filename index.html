@@ -5,11 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Project</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header></header>
-    <main></main>
+    <main>
+      <section id="gdp">
+        <h2>GDP(Gross Domestic Product)</h2>
+        <div class="graphs">
+          <div class="graph">
+            <canvas id="jp-canada-gdp"></canvas>
+          </div>
+          <div class="graph">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
