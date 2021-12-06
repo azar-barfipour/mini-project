@@ -97,6 +97,35 @@ const dataForJapanPopulation = {
     },
   ],
 };
+const dataForIranPopulation = {
+  labels: labels,
+  datasets: [
+    {
+      label: "Iran Population",
+      backgroundColor: "rgb(255, 99, 132)",
+      borderColor: "rgb(255, 99, 132)",
+      data: [
+        japanNumToCanadaDoller(28.51, OKU),
+        japanNumToCanadaDoller(38.65, OKU),
+        japanNumToCanadaDoller(56.37, OKU),
+        japanNumToCanadaDoller(65.62, OKU),
+        japanNumToCanadaDoller(73.76, OKU),
+      ],
+    },
+    {
+      label: "Canada Population",
+      backgroundColor: "rgb(0, 99, 132)",
+      borderColor: "rgb(0, 99, 132)",
+      data: [
+        japanNumToCanadaDoller(2132, MAN),
+        japanNumToCanadaDoller(2452, MAN),
+        japanNumToCanadaDoller(2769, MAN),
+        japanNumToCanadaDoller(3069, MAN),
+        japanNumToCanadaDoller(3400, MAN),
+      ],
+    },
+  ],
+};
 
 // configs
 const japanCanadaGDPconfig = {
@@ -113,11 +142,17 @@ const configIran = {
 // create chart
 const IranChart = new Chart(
   document.getElementById("Canada-Iran-gdp"),
-  configIran);
+  configIran
+);
 
 const japanCanadaPopulationConfig = {
   type: "line",
   data: dataForJapanPopulation,
+  options: {},
+};
+const iranCanadaPopulationConfig = {
+  type: "line",
+  data: dataForIranPopulation,
   options: {},
 };
 
@@ -129,4 +164,9 @@ const myJapanCanadaGDPChart = new Chart(
 const myJapanCanadaPopulationChart = new Chart(
   document.getElementById("jp-canada-population"),
   japanCanadaPopulationConfig
+);
+
+const myIranCanadaPopulationChart = new Chart(
+  document.getElementById("iran-canada-population"),
+  iranCanadaPopulationConfig
 );
